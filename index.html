@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* CSS Variables for Theming */
         :root {
@@ -16,7 +18,7 @@
             --light-secondary: #8f94fb;
             --light-card: #ffffff;
             --light-shadow: rgba(0, 0, 0, 0.1);
-            
+
             /* Dark Theme */
             --dark-bg: #121212;
             --dark-text: #e6e6e6;
@@ -24,7 +26,7 @@
             --dark-secondary: #8a85ff;
             --dark-card: #1e1e1e;
             --dark-shadow: rgba(0, 0, 0, 0.3);
-            
+
             /* Active Theme - Default to Light */
             --bg: var(--light-bg);
             --text: var(--light-text);
@@ -619,37 +621,37 @@
                 flex-direction: column-reverse;
                 text-align: center;
             }
-            
+
             .hero-btns {
                 justify-content: center;
             }
-            
+
             .about-content {
                 flex-direction: column;
             }
-            
+
             .contact-container {
                 flex-direction: column;
             }
-            
+
             .timeline::after {
                 left: 31px;
             }
-            
+
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-            
+
             .timeline-item:nth-child(even) {
                 left: 0;
             }
-            
+
             /* .timeline-item::after {
                 left: 15px;
             } */
-            
+
             .timeline-item:nth-child(odd)::after {
                 right: auto;
             }
@@ -669,28 +671,28 @@
                 gap: 40px;
                 transition: left 0.3s;
             }
-            
+
             .nav-links.active {
                 left: 0;
             }
-            
+
             .menu-btn {
                 display: block;
             }
-            
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
-            
+
             .section-title {
                 font-size: 1.8rem;
             }
-            
+
             .footer-content {
                 flex-direction: column;
                 gap: 20px;
             }
-            
+
             .footer-links {
                 flex-direction: column;
                 align-items: center;
@@ -699,13 +701,14 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header / Navigation -->
     <header>
         <div class="container">
             <nav>
                 <a href="#" class="logo">Portfolio</a>
-                
+
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -715,11 +718,11 @@
                     <!-- <li><a href="#achievements">Achievements</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                
+
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
                 </button>
-                
+
                 <div class="menu-btn" id="menuBtn">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -736,7 +739,8 @@
                     <p>Computer Science Student & Full-Stack Developer</p>
                     <div class="hero-btns">
                         <a href="#" class="btn">Download Resume</a>
-                        <a href="#projects" class="btn" style="background: var(--card); color: var(--text);">View Projects</a>
+                        <a href="#projects" class="btn" style="background: var(--card); color: var(--text);">View
+                            Projects</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -753,9 +757,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Who Am I?</h3>
-                    <p>I'm a passionate Computer Science student with a strong interest in web development and software engineering. I enjoy turning complex problems into simple, beautiful and intuitive solutions.</p>
-                    <p>My goal is to pursue a career as a Full-Stack Developer where I can apply my technical skills and creativity to build applications that make a difference.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing my knowledge through tech blogs.</p>
+                    <p>I'm a passionate Computer Science student with a strong interest in web development and software
+                        engineering. I enjoy turning complex problems into simple, beautiful and intuitive solutions.
+                    </p>
+                    <p>My goal is to pursue a career as a Full-Stack Developer where I can apply my technical skills and
+                        creativity to build applications that make a difference.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source
+                        projects, or sharing my knowledge through tech blogs.</p>
                 </div>
                 <div class="hobbies">
                     <h3>My Hobbies</h3>
@@ -805,7 +813,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- <div class="skill-category">
                     <h3>Backend</h3>
                     <div class="skill-item">
@@ -836,7 +844,7 @@
                         </div>
                     </div>
                 </div> -->
-                
+
                 <div class="skill-category">
                     <h3>Tools</h3>
                     <div class="skill-item">
@@ -867,7 +875,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- <div class="skill-category">
                     <h3>Databases</h3>
                     <div class="skill-item">
@@ -909,59 +917,68 @@
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-shopping-cart"></i>
+                        <!-- <i class="fas fa-shopping-cart"></i> -->
+                         <img src="amazon.png" alt="Amazon Clone" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="project-content">
                         <h3>Amazon Clone Websites</h3>
-                        <p>A sleek Amazon clone showcasing deals in electronics, fashion, and home essentials. Clean layout, responsive design, and engaging visuals.
-</p>
+                        <p>A sleek Amazon clone showcasing deals in electronics, fashion, and home essentials. Clean
+                            layout, responsive design, and engaging visuals.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
                         <div class="project-btns">
-                            <a href="https://amiamazon-clone.netlify.app/" target="_blank" class="project-btn">Amazon</a>
+                            <a href="https://amiamazon-clone.netlify.app/" target="_blank"
+                                class="project-btn">Amazon</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-shopping-cart"></i>
+                        <!-- <i class="fas fa-shopping-cart"></i> -->
+                         <img src="Cartoon network.png" alt="Cartoon Network Clone" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="project-content">
                         <h3>Cartoon Network Clone Websites</h3>
-                        <p>A vibrant Cartoon Network tribute packed with animated comedy, surprises, and action. Bold visuals and playful energy make it fun for all ages.
-</p>
+                        <p>A vibrant Cartoon Network tribute packed with animated comedy, surprises, and action. Bold
+                            visuals and playful energy make it fun for all ages.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
                         <div class="project-btns">
-                            <a href="https://cartoon-123.netlify.app/" target="_blank" class="project-btn">Cartoon Network</a>
+                            <a href="https://cartoon-123.netlify.app/" target="_blank" class="project-btn">Cartoon
+                                Network</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-tasks"></i>
+                        <!-- <i class="fas fa-tasks"></i> -->
+                         <img src="Bootstrap.png" alt="ICODERS Website" style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <div class="project-content">
                         <h3>My team ICODERS website</h3>
-                        <p>A crisp Bootstrap-powered hub offering dev tools, code snippets, and logic blocks—perfect for launching your coding essentials with style.
-</p>
+                        <p>A crisp Bootstrap-powered hub offering dev tools, code snippets, and logic blocks—perfect for
+                            launching your coding essentials with style.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">Bootstrap</span>
                         </div>
                         <div class="project-btns">
-                            <a href="http://bootstrapicoders.netlify.app" target="_blank" class="project-btn">Live Demo</a>
+                            <a href="http://bootstrapicoders.netlify.app" target="_blank" class="project-btn">Live
+                                Demo</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- <div class="project-card">
                     <div class="project-img">
                         <i class="fas fa-cloud-sun"></i>
@@ -1068,23 +1085,29 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
                 <div class="social-links">
                     <h3>Get in Touch</h3>
-                    <p>Feel free to reach out for collaboration or just to say hello! I'm always open to discussing new projects and opportunities.</p>
+                    <p>Feel free to reach out for collaboration or just to say hello! I'm always open to discussing new
+                        projects and opportunities.</p>
                     <p><i class="fas fa-envelope"></i> mohammedimranat@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +91 74180 27831</p>
                     <p><i class="fas fa-map-marker-alt"></i> Pernambut vellore, India</p>
-                    
+
                     <div class="social-icons">
-                        <a href="https://github.com/A-Mohammed-Imran" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mohammed-imran-02594b343/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61553596888364" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/atimran2006" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/A-Mohammed-Imran" class="social-icon" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-imran-02594b343/" class="social-icon"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61553596888364" class="social-icon"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/atimran2006" class="social-icon" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
                         <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
@@ -1111,17 +1134,17 @@
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
-        
+
         // Check for saved theme preference or respect OS preference
-        if (localStorage.getItem('theme') === 'dark' || 
+        if (localStorage.getItem('theme') === 'dark' ||
             (window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme'))) {
             body.classList.add('dark-mode');
             themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
         }
-        
+
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
-            
+
             if (body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
                 themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
@@ -1130,21 +1153,21 @@
                 themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
             }
         });
-        
+
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menuBtn');
         const navLinks = document.querySelector('.nav-links');
-        
+
         menuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
+
             if (navLinks.classList.contains('active')) {
                 menuBtn.innerHTML = '<i class="fas fa-times"></i>';
             } else {
                 menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             }
         });
-        
+
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
@@ -1152,13 +1175,14 @@
                 menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             });
         });
-        
+
         // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Thanks for your message! I\'ll get back to you soon.');
             this.reset();
         });
     </script>
 </body>
+
 </html>
